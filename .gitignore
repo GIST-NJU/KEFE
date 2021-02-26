@@ -1,0 +1,10 @@
+# IDE
+.idea/
+__pycache__/
+bert-master/__pychache__/
+
+# large resource and model files
+zips/
+pyltp-resource/ltp-model
+bert-master/chinese_L-12_H-768_A-12
+bert-master/model-*
