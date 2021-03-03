@@ -23,10 +23,10 @@ More instructions for installing  `pyltp` and `tensorflow` can be found in their
 
 1. Download the model files, which include:
 
-   * pyltp model files: [ltp-model]()
-   * pre-trained BERT model: [chinese_L-12_H-768_A-12]()
-   * classification model of feature extraction: [model-extract]()
-   * classification model of user review matching: [model-match]()
+   * pyltp model files: [ltp-model](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/ltp-model.zip)
+   * pre-trained BERT model: [chinese_L-12_H-768_A-12](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/chinese_L-12_H-768_A-12.zip)
+   * classification model of feature extraction: [model-extract](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/model-extract.zip)
+   * classification model of user review matching: [model-match](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/model-match.zip)
 
    The `ltp-model` should be put into the `pyltp-resource` directory, and the other three should be put into the `bert-master` directory.
 
