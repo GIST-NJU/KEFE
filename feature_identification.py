@@ -7,9 +7,11 @@ import csv
 import os
 from datetime import datetime
 from key_feature import KeyFeature
+from pathlib import Path
 
 bert_path = 'bert-master'
 temp_dir = 'temp'
+Path(temp_dir).mkdir(parents=True, exist_ok=True)
 
 
 def produce_matching_file(feature_path, review_path):
@@ -40,7 +42,7 @@ def produce_matching_file(feature_path, review_path):
                  ' --data_dir={}'
                  ' --vocab_file={}/chinese_L-12_H-768_A-12/vocab.txt'
                  ' --bert_config_file={}/chinese_L-12_H-768_A-12/bert_config.json'
-                 ' --init_checkpoint={}/model-2'
+                 ' --init_checkpoint={}/model-match'
                  ' --max_seq_length=128'
                  ' --output_dir={}'.format(bert_path, test_file, bert_path, bert_path, bert_path, temp_dir),
                  shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

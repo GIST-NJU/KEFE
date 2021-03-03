@@ -25,8 +25,8 @@ More instructions for installing  `pyltp` and `tensorflow` can be found in their
 
    * pyltp model files: [ltp-model]()
    * pre-trained BERT model: [chinese_L-12_H-768_A-12]()
-   * classification model of feature extraction: [model-1]()
-   * classification model of user review matching: [model-2]()
+   * classification model of feature extraction: [model-extract]()
+   * classification model of user review matching: [model-match]()
 
    The `ltp-model` should be put into the `pyltp-resource` directory, and the other three should be put into the `bert-master` directory.
 

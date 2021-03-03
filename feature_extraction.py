@@ -6,11 +6,13 @@ import subprocess
 import csv
 import os
 from candidate_phrase import CandidatePhraseExtractor
+from pathlib import Path
 
 bert_path = 'bert-master'
 pyltp_resource_path = 'pyltp-resource/ltp-model'
 phrase_file = 'temp/candidate_phrase.tsv'
 temp_dir = 'temp'
+Path(temp_dir).mkdir(parents=True, exist_ok=True)
 
 
 if __name__ == '__main__':
@@ -44,7 +46,7 @@ if __name__ == '__main__':
                  ' --data_dir={}'
                  ' --vocab_file={}/chinese_L-12_H-768_A-12/vocab.txt'
                  ' --bert_config_file={}/chinese_L-12_H-768_A-12/bert_config.json'
-                 ' --init_checkpoint={}/model-1'
+                 ' --init_checkpoint={}/model-extract'
                  ' --max_seq_length=128'
                  ' --output_dir={}'.format(bert_path, phrase_file, bert_path, bert_path, bert_path, temp_dir),
                  shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
