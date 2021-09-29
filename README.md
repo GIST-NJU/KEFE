@@ -2,9 +2,11 @@
 
 KEFE is an approach that exploits the information of app description and user reviews (written in Chinese) to identify **key features** that have a significant relationship with app rating scores. 
 
-The application of KEFE involves three main steps: 1) applying a textual pattern-based approach and a deep machine learning classifier to extract features from app description; 2) applying another classifier to match features with their relevant user reviews; and 3) applying regression analysis to identify key features. More details can be found in the following paper:
+The application of KEFE involves three main steps: 1) applying a textual pattern-based approach and a deep machine learning classifier to extract features from app description; 2) applying another classifier to match features with their relevant user reviews; and 3) applying regression analysis to identify key features. 
 
-> Huayao Wu, Wenjun Deng, Xintao Niu, and Changhai Nie. Identifying Key Features from App User Reviews. International Conference on Software Engineering (ICSE), 2021
+More details of KEFE can be found in the following paper:
+
+> Huayao Wu, Wenjun Deng, Xintao Niu, and Changhai Nie. Identifying Key Features from App User Reviews. International Conference on Software Engineering (ICSE), pp. 922-932, 2021
 
 
 
@@ -65,11 +67,10 @@ More instructions for installing  `pyltp` and `tensorflow` can be found in their
 
 
 
-### Experimental Results
 
-To be updated.
+### Dataset and Replication Package
 
+Dataset (app descriptions and raw user reviews collected) and replication package can be downlowded from the following links:
 
-### Dataset
-
-To be updated.
+* [dataset](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/dataset.zip)  
+* [replication package](https://github.com/GIST-NJU/KEFE/releases/download/v1.0/replication.zip)
